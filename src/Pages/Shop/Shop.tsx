@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState, useRef } from "react";
 import { Search, X, Filter } from "lucide-react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 // اصلاح کن به مسیر واقعی فایل products-200 در پروژه‌ات:
-import { Products } from "../../Products/Products";
+import { Products } from "../../Data/Products/Products";
 import { Pagination } from "@mui/material";
 
 const CATEGORIES: Record<string, string[]> = {

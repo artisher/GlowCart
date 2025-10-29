@@ -1,7 +1,7 @@
 // src/Pages/Product/ProductDetail.tsx
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { Products } from "../../Products/Products"; // مسیر را بررسی کن
+import { Products } from "../../Data/Products/Products"; // مسیر را بررسی کن
 import Product from "./Product";
 
 const ProductDetail: React.FC = () => {

@@ -11,8 +11,11 @@ import './styles.css';
 // import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
 import { ShoppingCart } from 'lucide-react';
-import { Products } from '../../Products/Products';
+import { Products } from '../../Data/Products/Products';
+import { useNavigate } from 'react-router-dom';
 export default function SliderInHotSales() {
+    const navigate = useNavigate()
+    const handleClick = (id: string) => navigate(`/product/${id}`);
     return (
         <>
             <Swiper
@@ -34,7 +37,7 @@ export default function SliderInHotSales() {
 
                 {Products.filter(p => p.isHot).map((p) => (
                     <SwiperSlide >
-                        <div key={p.id} className=" bg-[#fff] rounded-lg flex flex-col  shadow-xl h-[300px] lg:h-[520px]">
+                        <div key={p.id} className=" bg-[#fff] rounded-lg flex flex-col  shadow-xl h-[300px] lg:h-[520px] cursor-pointer" onClick={() => handleClick(p.id)}>
                             <img src={p.image} className="rounded-t-lg max-h-[130px]  lg:max-h-[350px] " />
                             <div className=" !p-1 flex flex-col gap-3">
                                 <div className="flex justify-between">

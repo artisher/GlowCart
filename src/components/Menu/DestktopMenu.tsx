@@ -46,6 +46,7 @@ export const DestktopMenu = () => {
     const handlShop = () => { navigate('/shop'); setOpen(false) }
 
     const handlCart = () => { navigate('/cart') }
+    const handleAdmin = () => { navigate('/admin') }
 
 
 
@@ -128,6 +129,7 @@ export const DestktopMenu = () => {
                     <li className="bg-[#FF5C8D] p-1.5 rounded-xl cursor-pointer hover:bg-[#fd3a75] transition-transform duration-300 hover:scale-110" onClick={handleLogin}>
                         <CircleUser size={24} color="#fff" />
                     </li>
+                    <li onClick={handleAdmin} className="bg-[#FF5C8D] p-1.5 rounded-xl cursor-pointer hover:bg-[#fd3a75] text-white transition-transform duration-300 hover:scale-110"><h1>enter admin panel</h1></li>
                 </ul>
             </div>
         </div>

@@ -67,6 +67,12 @@ export const publicRoutes = [
         key: 'product',
         path: '/product/:id',
         component: lazy(() => import("../Pages/Product/ProductDetail"))
-    }
+    },
+    //admin
+    {
+        key: 'admin',
+        path: '/admin',
+        component: lazy(() => import("../Pages/AdminPanel/AdminPanel"))
+    },
 
 ]
