@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 🌸 GlowCart — Modern Beauty E-Commerce (Demo)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [https://glow-cart-qyuh.vercel.app/](https://glow-cart-qyuh.vercel.app/)
 
-Currently, two official plugins are available:
+GlowCart is a **modern, responsive, and fully designed e-commerce demo** built for beauty and personal care products.  
+It’s a **frontend-focused showcase project** created with **React + TypeScript + Tailwind CSS**, including both **Customer** and **Admin** panels, mock data, and an elegant UI optimized for performance and scalability.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+GlowCart demonstrates the structure and design of a real-world online store:
+- Beautiful, responsive UI across all devices
+- Shop page with filters, categories, and pagination
+- Product details page with gallery, badges, and tabs
+- Admin panel interface with dashboard, product, order, and customer management
+- Mock data for products and users (no backend required)
+- Ready to connect to a real backend (NestJS, MongoDB, Stripe, etc.)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Live Demo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🔗 **Visit:** [https://glow-cart-qyuh.vercel.app/](https://glow-cart-qyuh.vercel.app/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧩 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Layer | Tools / Libraries |
+|-------|-------------------|
+| **Frontend** | React, TypeScript |
+| **Styling** | Tailwind CSS |
+| **State Management** | Zustand |
+| **Routing** | React Router v6 |
+| **Icons** | lucide-react |
+| **Pagination UI** | MUI Pagination |
+| **Deployment** | Vercel |
+| **Mock Data** | Local JSON/TS arrays for products & users |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛍️ Main Features
+
+### 🧕 Customer Panel
+- Product list with **category / subcategory filters**
+- **Search bar** with URL sync (`?q=...&category=...`)
+- **Pagination** and **responsive grid layout**
+- Product detail page with:
+  - Image gallery + zoom
+  - Tabs: Description, Reviews, Specifications
+  - Badges for “New” and “Hot” items
+- Add to Cart (UI only)
+- Local mock authentication demo (optional)
+
+### 🧑‍💼 Admin Panel (UI)
+- Sidebar navigation (Dashboard, Products, Orders, Customers, Settings)
+- Mock data tables and cards
+- Product CRUD UI prepared for API connection
+- Order & analytics mock overview
+
+---
+🧑‍💻 Author
+
+Developed by: Mostafa "artisher"
+
+Project: GlowCart – Beauty E-commerce Demo
+Tech Stack: React + TypeScript + Tailwind + Zustand
+Deployed on: Vercel
+
