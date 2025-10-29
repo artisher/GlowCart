@@ -111,7 +111,7 @@ const AdminPanel: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-[#FFF8F9]">
-        
+
             <div className="md:hidden flex items-center justify-between p-4 border-b border-gray-200 bg-white">
                 <div className="flex items-center gap-3">
                     <button className="p-2 rounded-md bg-[#FF5C8D] text-white" onClick={() => setSidebarOpen((s) => !s)}>
@@ -128,7 +128,7 @@ const AdminPanel: React.FC = () => {
             </div>
 
             <div className="max-w-7xl mx-auto md:flex">
-                
+
                 <aside
                     className={`bg-white md:sticky md:top-6 md:self-start border border-gray-100 rounded-2xl p-4 md:w-64 transition-transform z-40 ${sidebarOpen ? "absolute left-4 top-20 w-[86%] shadow-xl" : "hidden md:block"
                         }`}
@@ -270,7 +270,7 @@ const AdminPanel: React.FC = () => {
                                                 </div>
                                             </div>
                                             <div className="flex items-center gap-3">
-                                                <div className="text-xs text-gray-500">{c.orders} orders</div>
+                                                <div className="text-xs text-gray-500"> orders</div>
                                                 <button className="px-3 py-1 rounded border border-gray-100">View</button>
                                             </div>
                                         </div>

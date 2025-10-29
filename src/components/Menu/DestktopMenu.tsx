@@ -60,6 +60,7 @@ export const DestktopMenu = () => {
     };
 
     useEffect(() => { console.log(categoryIsOpen); }, [categoryIsOpen]);
+    console.log(open);
 
     return (
         <div className="bg-[#fff8f9] border-b shadow-xl border-[#d6d6d6]">

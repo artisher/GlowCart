@@ -65,7 +65,7 @@ export const Faq: React.FC = () => {
                         <div className="text-center text-gray-500 py-10">No results found.</div>
                     )}
 
-                    {filtered.map((item, idx) => {
+                    {filtered.map((item) => {
                         const realIdx = FAQ_ITEMS.indexOf(item);
                         const opened = openIndex === realIdx;
                         return (

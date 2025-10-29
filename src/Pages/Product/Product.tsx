@@ -34,6 +34,7 @@ export const Product: React.FC<{ productProp: Product }> = ({ productProp }) => 
     };
 
     const formatPrice = (p: number) => `$${p.toFixed(2)}`;
+    console.log(setMainImg);
 
     return (
         <div className="min-h-screen bg-[#FFF8F9] py-12">
